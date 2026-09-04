@@ -14,7 +14,8 @@ classDiagram
       Empresa o-- Cliente
       Cliente *-- Contacto
       Empleado *-- Sueldo
-      Persona o-- Empleado
+      Persona -|> Empleado
+      Persona -|> Cliente
       Directivo o-- Empleado
       class AppComputadora{
             +static void main(String args[])
