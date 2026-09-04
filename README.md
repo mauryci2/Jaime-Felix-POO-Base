@@ -17,6 +17,9 @@ classDiagram
       Ejemplar *-- Libro
       Libro *-- Autor
       Lector o-- Ejemplar
+      class Principal{
+            +static void main(String args[])
+      }
       class Biblioteca{
             -List~Ejemplar~ inventario
             -List~Lector~ lectores
@@ -53,9 +56,9 @@ classDiagram
             +getCantidadPrestamo()
             }
       class Ejemplar {
-            -String id
-            -Libro libro
-            -String estado
+            -id
+            -libro
+            -estado
             +Ejemplar()
             +getEstado()
             +setEstado(String nuevoEstado)
