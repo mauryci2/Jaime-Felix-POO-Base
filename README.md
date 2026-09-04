@@ -13,6 +13,11 @@ classDiagram
       class Empresa{
             -empleado
             -cliente
+            +Empresa()
+            +getEmpleado()
+            +getCliente()
+            +contratar(Empleado emp)
+            +registrarCliente(Cliente c)
       }
       class Directivo{
             -static categoria;
