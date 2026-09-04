@@ -30,7 +30,6 @@ classDiagram
       }
             
       class Libro{
-            -id
             -nombre
             -tipoLibro
             -editorial
