@@ -14,7 +14,7 @@ classDiagram
             -List~Lector~ lectores
             +Biblioteca()
             +prestar(Lector lector, Libro libro)
-            +devolver(Lector lector, Libro libro)
+            +devolver(Lector lector, Libro libro, int diasUso)
             
       }
             
@@ -37,12 +37,17 @@ classDiagram
       }
       class Lector{
             -id
-            -cantPrestados
+            -List~Ejemplar~ librosPrestados
+            -diasMulta
             +Lector()
-            +getCantidadPrestados()
+            +getDiasMulta()
+            +setDiasMulta(int dias)
+            +agregarPrestamo(Ejemplar e)
+            +quitarPrestamo(Ejemplar e)
             +puedePedir()
             +agregarMulta(int diasRetraso)
             +leer()
+            +getCantidadPrestamo()
             }
       class Ejemplar {
             -String id
