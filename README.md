@@ -9,6 +9,8 @@ Platilla base para ejercicios de la materia de POO
 title: Diagrama de Clases
 ---
 classDiagram
+      Lector --|> Persona
+      Autor --|> Persona
 
       Biblioteca o-- Ejemplar
       Biblioteca o-- Lector
