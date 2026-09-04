@@ -71,9 +71,9 @@ classDiagram
             +comprar()
       }
       class Contacto{
-            -String numero
-            -String correo
-            -String contrasenia
+            -numero
+            -correo
+            -contrasenia
             +Contacto()
             +getNumero()
             +setNumero(String num)
