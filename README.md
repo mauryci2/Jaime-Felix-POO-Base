@@ -10,8 +10,48 @@ title: Aplicación de Computadora
 ---
 classDiagram
       class AppComputadora
-      Principal: -atributos
-      Principal: +metodos()
+      class Directivo{
+      
+      }
+      class Persona{
+            -nombre
+            -edad
+            +Persona()
+            +getNombre()
+            +setNombre(String nom)
+            +getEdad()
+            +setEdad(int edad)
+      }
+      class Empleado{
+            -id
+            -sueldo
+             +Empleado()
+            +getId()
+            +getSueldo()
+            +setSueldo(double sueldo)
+      }
+      class Cliente{
+            -id
+            -contacto
+            +Cliente()
+            +getId()
+            +getContacto()
+            +setContacto(Contacto c)
+            +comprar()
+      }
+      class Contacto{
+            -String numero
+            -String correo
+            -String contrasenia
+            +Contacto()
+            +getNumero()
+            +setNumero(String num)
+            +getCorreo()
+            +setCorreo(String c)
+            +getContra()
+            +setContra(String contra)
+            +recibirMensaje(String mensaje)
+      }
 ```
 [Referencia-Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
 
