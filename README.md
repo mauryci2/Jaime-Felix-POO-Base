@@ -44,6 +44,7 @@ classDiagram
             +getId()
             +getSueldo()
             +setSueldo(double sueldo)
+            +trabajar()
       }
       class Cliente{
             -id
