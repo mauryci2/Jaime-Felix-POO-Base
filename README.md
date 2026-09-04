@@ -10,6 +10,10 @@ title: Aplicación de Computadora
 ---
 classDiagram
       class AppComputadora
+      class Empresa{
+            -empleado
+            -cliente
+      }
       class Directivo{
             -static categoria;
             -List<Empleado> subordinados
