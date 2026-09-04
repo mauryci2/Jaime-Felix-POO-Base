@@ -10,11 +10,11 @@ title: Aplicación de Computadora
 ---
 classDiagram
       %% Relaciones de agregación / composición
-      Empresa o-- Empleado : contrata
-      Empresa o-- Cliente : registra
-      Cliente *-- Contacto : tiene
+      Empresa o-- Empleado
+      Empresa o-- Cliente
+      Cliente *-- Contacto
       Persona o-- Empleado
-      Directivo o-- Empleado : supervisa
+      Directivo o-- Empleado
       class AppComputadora{
             +static void main(String args[])
       }
