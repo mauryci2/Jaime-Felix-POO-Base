@@ -13,6 +13,7 @@ classDiagram
       Empresa o-- Empleado
       Empresa o-- Cliente
       Cliente *-- Contacto
+      Empleado *-- Sueldo
       Persona o-- Empleado
       Directivo o-- Empleado
       class AppComputadora{
@@ -29,7 +30,7 @@ classDiagram
       }
       class Directivo{
             -categoria;
-            -List<Empleado> subordinados
+            -List~Empleado~ subordinados
             +Directivo()
             +getCategoria()
             +getSubordinados()
@@ -51,6 +52,12 @@ classDiagram
             +getSueldo()
             +setSueldo(double sueldo)
             +trabajar()
+      }
+      class Sueldo{
+      -sueldo
+      +Sueldo()
+      +getSueldo()
+      +setSueldo(double sueldo)
       }
       class Cliente{
             -id
