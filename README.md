@@ -24,8 +24,8 @@ classDiagram
             -List~Ejemplar~ inventario
             -List~Lector~ lectores
             +Biblioteca()
-            +prestar(Lector lector, Libro libro)
-            +devolver(Lector lector, Libro libro, int diasUso)
+            +prestar(Lector lector, Ejemplar libro)
+            +devolver(Lector lector, Ejemplar libro, int diasUso)
             
       }
             
@@ -37,7 +37,6 @@ classDiagram
             -autor
             -anio
             +Libro()
-            +getEstado()
             +DetallesLibro()
             
       }
