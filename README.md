@@ -9,9 +9,19 @@ Platilla base para ejercicios de la materia de POO
 title: Diagrama de Clases
 ---
 classDiagram
-      class Principal
+      class Biblioteca{}
       Principal: -atributos
       Principal: +metodos()
+      class Libro{
+            -nombre
+            -tipoLibro
+            -editorial
+            -autor
+            -anio
+      }
+      class Autor{
+            
+      }
 ```
 [Referencia-Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
 
