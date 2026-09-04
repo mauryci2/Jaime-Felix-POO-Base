@@ -9,6 +9,11 @@ Platilla base para ejercicios de la materia de POO
 title: Aplicación de Computadora
 ---
 classDiagram
+      %% Relaciones de agregación / composición
+      Empresa o-- Empleado : contrata
+      Empresa o-- Cliente : registra
+      Cliente *-- Contacto : tiene
+      Directivo o-- Empleado : supervisa
       class AppComputadora{
             +static void main(String args[])
       }
