@@ -16,6 +16,7 @@ classDiagram
       Empleado *-- Sueldo
       Persona <|-- Empleado
       Persona <|-- Cliente
+      Empleado <|-- Directivo
       Directivo o-- Empleado
       class AppComputadora{
             +static void main(String args[])
