@@ -9,18 +9,64 @@ Platilla base para ejercicios de la materia de POO
 title: Diagrama de Clases
 ---
 classDiagram
-      class Biblioteca{}
-      Principal: -atributos
-      Principal: +metodos()
+      class Biblioteca{
+            -List~libro~ inventario
+            -List~Lector~ lectores
+            +Biblioteca()
+            +prestar(Lector lector, Libro libro)
+            +devolver(Lector lector, Libro libro)
+            
+      }
+            
       class Libro{
+            -id
             -nombre
+            -estado
+            -estaOcupado
             -tipoLibro
             -editorial
             -autor
             -anio
+            -diasPrestados
+            +Libro()
+            +getDiasPrestados()
+            +reiniciarDiasPrestado()
+            +getEstado()
+            +DetallesLibro()
+            +isOcupado()
+      }
+      class Lector{
+            -id
+            -cantPrestados
+            +Lector()
+            +getCantidadPrestados()
+            +puedePedir()
+            +agregarMulta(int diasRetraso)
+            +leer()
+            }
+      class Ejemplar {
+            -String id
+            -Libro libro
+            -String estado
+            +Ejemplar()
+            +getEstado()
+            +setEstado(String nuevoEstado)
       }
       class Autor{
-            
+            -nacionalidad
+            -fechaNacimiento
+            +Autor()
+            +getNacionalidad()
+            +getFechaNacimiento()
+      }
+      class Persona{
+            -nombre
+            -edad
+            +Persona()
+            +getNombre()
+            +setNombre(String nom)
+            +getEdad()
+            +setEdad(int edad)
       }
 ```
 [Referencia-Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
