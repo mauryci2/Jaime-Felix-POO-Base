@@ -9,6 +9,7 @@ Platilla base para ejercicios de la materia de POO
 title: Biblioteca. Pérez Ortiz JM
 ---
 classDiagram
+      direction RL
       Lector --|> Persona
       Autor --|> Persona
 
