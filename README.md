@@ -13,6 +13,7 @@ classDiagram
       Empresa o-- Empleado : contrata
       Empresa o-- Cliente : registra
       Cliente *-- Contacto : tiene
+      Persona o-- Empleado
       Directivo o-- Empleado : supervisa
       class AppComputadora{
             +static void main(String args[])
