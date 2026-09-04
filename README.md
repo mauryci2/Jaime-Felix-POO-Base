@@ -9,7 +9,9 @@ Platilla base para ejercicios de la materia de POO
 title: Aplicación de Computadora
 ---
 classDiagram
-      class AppComputadora
+      class AppComputadora{
+            +static void main(String args[])
+      }
       class Empresa{
             -empleado
             -cliente
