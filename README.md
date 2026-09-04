@@ -19,7 +19,7 @@ classDiagram
             +static void main(String args[])
       }
       class Empresa{
-            -List~empleado~ empleados
+            -List~Empleado~ empleados
             -List~Cliente~ clientes
             +Empresa()
             +getEmpleado()
