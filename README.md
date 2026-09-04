@@ -9,8 +9,14 @@ Platilla base para ejercicios de la materia de POO
 title: Diagrama de Clases
 ---
 classDiagram
+
+      Biblioteca o-- Ejemplar
+      Biblioteca o-- Lector
+      Ejemplar *-- Libro
+      Libro *-- Autor
+      Lector o-- Ejemplar
       class Biblioteca{
-            -List~libro~ inventario
+            -List~Ejemplar~ inventario
             -List~Lector~ lectores
             +Biblioteca()
             +prestar(Lector lector, Libro libro)
@@ -21,19 +27,14 @@ classDiagram
       class Libro{
             -id
             -nombre
-            -estado
-            -estaOcupado
             -tipoLibro
             -editorial
             -autor
             -anio
-            -diasPrestados
             +Libro()
-            +getDiasPrestados()
-            +reiniciarDiasPrestado()
             +getEstado()
             +DetallesLibro()
-            +isOcupado()
+            
       }
       class Lector{
             -id
