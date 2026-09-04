@@ -6,7 +6,7 @@ Platilla base para ejercicios de la materia de POO
 [Editor en línea](https://mermaid.live/)
 ```mermaid
 ---
-title: Diagrama de Clases
+title: Biblioteca. Pérez Ortiz JM
 ---
 classDiagram
       Lector --|> Persona
