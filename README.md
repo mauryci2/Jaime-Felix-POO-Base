@@ -6,7 +6,7 @@ Platilla base para ejercicios de la materia de POO
 [Editor en línea](https://mermaid.live/)
 ```mermaid
 ---
-title: Aplicación de Computadora
+title: Aplicación de Computadora. Pérez Ortiz JM
 ---
 classDiagram
       %% Relaciones de agregación / composición
@@ -19,8 +19,8 @@ classDiagram
             +static void main(String args[])
       }
       class Empresa{
-            -empleado
-            -cliente
+            -List~empleado~ empleados
+            -List~Cliente~ clientes
             +Empresa()
             +getEmpleado()
             +getCliente()
@@ -28,7 +28,7 @@ classDiagram
             +registrarCliente(Cliente c)
       }
       class Directivo{
-            -static categoria;
+            -categoria;
             -List<Empleado> subordinados
             +Directivo()
             +getCategoria()
