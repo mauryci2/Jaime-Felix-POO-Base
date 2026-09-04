@@ -6,10 +6,10 @@ Platilla base para ejercicios de la materia de POO
 [Editor en línea](https://mermaid.live/)
 ```mermaid
 ---
-title: Diagrama de Clases
+title: Aplicacion de Computadora
 ---
 classDiagram
-      class Principal
+      class AppComputadora
       Principal: -atributos
       Principal: +metodos()
 ```
