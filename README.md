@@ -11,8 +11,12 @@ title: Aplicación de Computadora
 classDiagram
       class AppComputadora
       class Directivo{
-      
-      }
+            -static categoria;
+            -List<Empleado> subordinados
+            +Directivo()
+            +getCategoria()
+            +getSubordinados()
+      }      
       class Persona{
             -nombre
             -edad
